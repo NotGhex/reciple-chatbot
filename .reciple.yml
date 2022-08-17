@@ -1,0 +1,11 @@
+name: reciple-chatbot
+version: 1.0.0
+description: A chatbot for Reciple.js
+license: MIT
+author: GhexterCortes
+files:
+  - 'chatbot.js'
+supporterRecipleVersions:
+  - '^5.0.0'
+dependencies:
+  axios: ^0.27.2
