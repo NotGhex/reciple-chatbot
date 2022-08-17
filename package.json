@@ -4,7 +4,8 @@
   "author": "GhexterCortes",
   "scripts": {
     "clean": "npx rimraf dist",
-    "build": "yarn run clean && npx tsc && cp ./.reciple.yml ./dist"
+    "build": "yarn run clean && npx tsc && cp ./.reciple.yml ./dist",
+    "pack": "yarn run build && npx rmm pack --module-dir ./dist --remove-old-file true ./"
   },
   "dependencies": {
     "axios": "^0.27.2"

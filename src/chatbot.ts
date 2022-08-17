@@ -172,3 +172,5 @@ export class RecipleChatBotModule implements RecipleScript {
         return yml.parse(readFileSync(configPath, 'utf-8'));
     }
 }
+
+export default new RecipleChatBotModule();
