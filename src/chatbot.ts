@@ -38,6 +38,7 @@ export class RecipleChatBotModule implements RecipleScript {
                     .setDescription('Ask something')
                     .addStringOption(question => question
                         .setName('question')
+                        .setDescription('How are you?')
                         .setRequired(true)    
                     )
                     .setExecute(async command => {
@@ -62,6 +63,7 @@ export class RecipleChatBotModule implements RecipleScript {
                     .setValidateOptions(true)
                     .addOption(question => question
                         .setName('question')
+                        .setDescription('How are you?')
                         .setRequired(true)    
                     )
                     .setExecute(async command => {
