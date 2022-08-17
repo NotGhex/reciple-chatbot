@@ -2,6 +2,10 @@
   "name": "reciple-chatbot",
   "private": true,
   "author": "GhexterCortes",
+  "scripts": {
+    "clean": "npx rimraf dist",
+    "build": "yarn run clean && npx tsc && cp ./.reciple.yml ./dist"
+  },
   "dependencies": {
     "axios": "^0.27.2"
   },
@@ -10,6 +14,7 @@
     "@types/node": "^18.7.6",
     "discord.js": "^14.2.0",
     "reciple": "^5.1.1",
+    "rimraf": "^3.0.2",
     "typescript": "^4.7.4",
     "yaml": "^2.1.1"
   }
